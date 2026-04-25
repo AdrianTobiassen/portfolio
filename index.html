@@ -1,60 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <meta name="description" content="Portfolio showcasing projects in electronics and web development" />
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/script.js" defer></script>
 </head>
+
 <body>
-    <nav>
-
-    </nav>
-        
     <header>
-    <h1>Home page</h1>
-    <p>Hi, my name is Adrian! I studied Web Development at NTNU Gjøvik, where I've learned various things from front-end, back-end.</p>
-    <p>
-        On this page I will showcase some of the stuff I've made through my years at NTNU, where the primary purpose will be to give some insight into my identity. I enjoy both front-end and back-end coding equally, as for languages I'm familiar with HTML, CSS, JS, React, Python, Bash, MySQL, PHP --
-        
-        I like working both in teams and on my own, I'm used to working with different kinds of people through my years at NTNU. 
+        <div class="">
+            <a class="portfolio-title" href="index.html">Adrian Nedkvitne Tobiassen</a>
 
-        I'm currently 29 years old, and I grew up around the Oslo area. I worked at Forskningsparken as a lab assistant for a few years before I decided to get my degree. I applied
-        for this study programme because I wanted a degree that teaches a wide skillset within the IT field, as I like to do various things and it's a rapidly evolving field.
-
-        My dream job would be (anything please hire me I'm desperate)
-    </p>
+            <nav class="portfolio-nav" aria-label="Main navigation">
+                <ul class="nav-list">
+                    <li><a class="nav-link active" href="index.html" aria-current="page">Home</a></li>
+                    <li><a class="nav-link" href="projects.html">Projects</a></li>
+                    <li><a class="nav-link" href="about.html">About</a></li>
+                    <li><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    
+
+
     <main>
-        Project 1: Employee Directory Management System
+        <section class="heading section">
+            <div class="container heading-grid">
+                <div class="heading-content">
+                    <div class="heading-card-profile">
+                        <img src="images/profile.jpg" alt="person standing in front of an ocean"
+                            class="profile-image" />
+                    </div>
 
-        I chose this project because I found it to be one of the more fun tasks we've had, especially in hindsight. Learning to use PHP and MySQL in a practical sense was useful for granting some perspective on how they can be used in the field.
+                    <div class="heading-card-info">
+                        <p class="heading-intro"></p>
+                        <h1>My not so super awesome portfolio, at least for now!</h1>
+                        <p class="heading-text">
+                            Hi, I'm Adrian. It all started on a cold winter night in 1997 when I entered the wo.. I'm 29, I just finished my education (hopefully) and now I'm looking for a job. Thanks for considering me. 
+                            I show up on time and I don't take sick days unless I'm quite literally on the verge of death. I like attention to detail, yet experience has taught me to strike a balance with efficiency. 
+                            That about sums me up, if you have further questions don't hesitate to contact me.
+                        </p>
 
-        This is a project I did on my own, so I'm responsible for every role in it.
+                        <div class="heading-card-buttons">
+                            <a class="button button-primary" href="projects.html">View projects</a>
+                            <a class="button button-secondary" href="about.html">About me</a>
+                        </div>
+                    </div>
+                </div>
 
-        Link to the project: 
-
-        In retrospective I would've done a few things differently, namely ---
-
-
-        Resources used in this project: PHP, MySQL, CSS
-
-
-        Project 2: FN Goal website?
-
-
-
-        Project 3: Not sure
+                <aside class="heading-panel" aria-label="Interest areas">
+                    <h2 class="panel-title">Interest areas</h2>
+                    <ul class="panel-list">
+                        <li>Electronics and hardware</li>
+                        <li>Security</li>
+                    </ul>
+                </aside>
+            </div>
+        </section>
 
     </main>
 
+    <section>
+        <p>Something interesting.. maybe previous work experience?</p>
+    </section>
 
     <footer>
-        Link to my social media? (I don't really use social media though..)
-        Other contact information?
+        <p>Contact information, github, linkedin.. anything else?</p>
     </footer>
 
 
-  
 </body>
+
 </html>
