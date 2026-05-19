@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../favicon.png">
+    <title>Employee Directory Management System</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <header class="portfolio-header">
+        <div class="portfolio-container portfolio-header-inner">
+            <a class="portfolio-title" href="../index.html">Adrian Nedkvitne Tobiassen</a>
+
+            <nav class="portfolio-navigation" aria-label="Main navigation">
+                <ul class="nav-list">
+                    <li><a class="nav-link" href="../index.html">Home</a></li>
+                    <li><a class="nav-link" href="../pages/about.html">About</a></li>
+                    <li><a class="nav-link" href="../pages/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <article class="portfolio-project-detail">
+            <section class="portfolio-page-introduction">
+                <div class="portfolio-container">
+                    <p class="portfolio-label">Project</p>
+                    <h1>Employee Directory Management System</h1>
+                    <p class="portfolio-description">
+                        PHP and MySQL employee management system built to practice authentication, CRUD
+                        operations, and database basics.
+                </div>
+            </section>
+
+            <section class="portfolio-project-detail-content">
+                <div class="portfolio-container">
+                    <img class="portfolio-project-detail-image" src="../images/employeelist.webp"
+                        alt="a list of employees with management options">
+
+                    <div class="portfolio-project-overview">
+                        <section>
+                            <h2>Overview</h2>
+                            <p>
+                                This project is a simple employee management system built with PHP and MySQL to practice
+                                CRUD operations.
+                                The system is set up through an initialization file that creates the database and user
+                                account,
+                                allowing an administrator to log in and manage employee records through a locally hosted
+                                website.
+                            </p>
+                        </section>
+
+                        <section>
+                            <h2>My contribution</h2>
+                            <p>
+                                I worked with the database logic, authentication flow, and validation considerations.
+                                The project helped me understand how database-backed systems need to handle input
+                                carefully to protect both functionality and data integrity.
+                            </p>
+                        </section>
+
+                        <section>
+                            <h2>What I learned</h2>
+                            <p>
+                                I learned more about SQL databases, input sanitization, file validation, file size
+                                limits, and reducing security risks such as SQL injection.
+                                One important reflection was that restrictions are not only about preventing user
+                                mistakes, but also about protecting the stability and integrity of the system itself.
+                                I initially argued that limiting file sizes for administrator uploads only makes the
+                                system more difficult for the admin to use with little benefit, but even advanced users
+                                make mistakes,
+                                and in hindsight I'd argue the file size limit should still be added to ensure the
+                                stability of the database.
+                            </p>
+                        </section>
+                    </div>
+
+                    <a class="portfolio-text-link" href="../index.html">Back to home</a>
+                </div>
+            </section>
+        </article>
+    </main>
+
+    <footer class="portfolio-footer">
+        <div class="portfolio-container portfolio-footer-content">
+            <p>© 2026 Adrian Nedkvitne Tobiassen</p>
+        </div>
+    </footer>
+</body>
+
+</html>

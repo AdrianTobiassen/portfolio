@@ -4,82 +4,157 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <meta name="description" content="Portfolio showcasing projects in electronics and web development" />
-    <link rel="stylesheet" href="styles/styles.css">
-    <script src="scripts/script.js" defer></script>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <title>Adrian Nedkvitne Tobiassen Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-    <header>
-        <div class="">
+    <header class="portfolio-header">
+        <div class="portfolio-container portfolio-header-inner">
             <a class="portfolio-title" href="index.html">Adrian Nedkvitne Tobiassen</a>
 
-            <nav class="portfolio-nav" aria-label="Main navigation">
+            <nav class="portoflio-nav" aria-label="Main navigation">
                 <ul class="nav-list">
                     <li><a class="nav-link active" href="index.html" aria-current="page">Home</a></li>
-                    <li><a class="nav-link" href="projects.html">Projects</a></li>
-                    <li><a class="nav-link" href="about.html">About</a></li>
-                    <li><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li><a class="nav-link" href="pages/about.html">About</a></li>
+                    <li><a class="nav-link" href="pages/contact.html">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-
     <main>
-        <section class="heading section">
-            <div class="container heading-grid">
-                <div class="heading-content">
-                    <div class="heading-card-profile">
-                        <img src="images/profile.jpg" alt="person standing in front of an ocean"
-                            class="profile-image" />
+        <section class="portfolio-introduction">
+            <div class="portfolio-container portfolio-introduction-container">
+                <div class="portfolio-introduction-content">
+                    <div class="portfolio-portrait">
+                        <img class="portfolio-portrait-image" src="images/portrait.jpg"
+                            alt="person standing in front of a river under a cherry tree">
                     </div>
 
-                    <div class="heading-card-info">
-                        <p class="heading-intro"></p>
-                        <h1>Who am I?</h1>
-                        <p class="heading-text">
-                            Hi, I'm Adrian. I just finished my education at NTNU taking a bachelor's degree in Web Development. 
-                            I've always had a fascination for electronics, both the physical hardware and the software that runs on it. 
-                            That's what led me to my degree, as I feel like it teaches a lot about both. In my time at NTNU I've learned about databases, security, different code languages, and even built electronic devices from scratch, which I'd like to showcase further down.
-                        <div class="heading-card-buttons">
-                            <a class="button button-primary" href="projects.html">View projects</a>
-                            <a class="button button-secondary" href="about.html">About me</a>
-                        </div>
+                    <p class="portfolio-label">
+                        Who am I?
+                    </p>
+
+                    <h1>
+                        Adrian Nedkvitne Tobiassen
+                    </h1>
+
+                    <p class="portfolio-description">
+                        Hi, I'm Adrian. I just finished my education at NTNU studying a bachelor's degree in Web
+                        Development.
+                        I've had a fascination for physical hardware and the software
+                        that runs on it ever since my first computer, which led to my degree. In my time at
+                        NTNU I've learned about databases, security, code languages, and built
+                        electronic devices from scratch, which I'd like to showcase below.
+                    </p>
+
+                    <div class="portfolio-action-group">
+                        <a class="button button-primary" href="/pages/contact.html">
+                            Contact Me
+                        </a>
+
+                        <a class="button button-secondary" href="/pages/about.html">
+                            About Me
+                        </a>
                     </div>
+
                 </div>
-
-                <aside class="heading-panel" aria-label="Interest areas">
-                    <h2 class="panel-title">Interest areas</h2>
-                    <ul class="panel-list">
-                        <li>Electronics and hardware</li>
-                        <li>Security</li>
-                        <li>Code</li>
-                    </ul>
-                </aside>
             </div>
         </section>
 
+        <section class="portfolio-featured-projects">
+            <div class="portfolio-container">
+                <div class="portfolio-section-heading">
+                    <p class="portfolio-label">What have I worked on?</p>
+                    <h2>Featured Projects</h2>
+                    <p class="portfolio-section-description">
+                        Here are some of the projects I've worked on during my time at NTNU.
+                    </p>
+                </div>
+
+                <div class="portfolio-project-grid">
+                    <article class="portfolio-project-card">
+                        <img class="portfolio-project-image" src="images/pilldispenser.webp"
+                            alt="machine containing a windmill that moves small objects into a dispensable pocket">
+
+                        <div class="portfolio-project-card-content">
+                            <h3>Pill Dispenser</h3>
+                            <p>
+                                A custom built machine that dispenses pills at set intervals using a stepper motor and
+                                Python controlled movement.
+                            </p>
+
+                            <ul class="portfolio-tag-list" aria-label="Technologies and skills used">
+                                <li>Python</li>
+                                <li>Breadboard</li>
+                                <li>Circuit Board</li>
+                                <li>Wiring</li>
+                                <li>Stepper Motor</li>
+                                <li>Soldering</li>
+                            </ul>
+
+                            <a class="portfolio-text-link" href="projects/pill-dispenser.html">View project</a>
+                        </div>
+                    </article>
+
+                    <article class="portfolio-project-card">
+                        <img class="portfolio-project-image" src="images/perceptix.webp"
+                            alt="an AI generated cat looking at a log in screen">
+
+                        <div class="portfolio-project-card-content">
+                            <h3>Perceptix</h3>
+                            <p>
+                                An online platform designed to test whether users can distinguish AI generated media
+                                from human made content.
+                            </p>
+
+                            <ul class="portfolio-tag-list" aria-label="Technologies and skills used">
+                                <li>Front-end</li>
+                                <li>Back-end</li>
+                                <li>MongoDB</li>
+                                <li>Express</li>
+                                <li>React</li>
+                                <li>Node</li>
+                            </ul>
+
+                            <a class="portfolio-text-link" href="projects/perceptix.html">View project</a>
+                        </div>
+                    </article>
+
+                    <article class="portfolio-project-card">
+                        <img class="portfolio-project-image" src="images/employeelist.webp"
+                            alt="a list of employees with management options">
+
+                        <div class="portfolio-project-card-content">
+                            <h3>Employee Directory Management System</h3>
+                            <p>
+                                A PHP and MySQL employee management system built to practice authentication, CRUD
+                                operations, and database design.
+                            </p>
+
+                            <ul class="portfolio-tag-list" aria-label="Technologies and skills used">
+                                <li>PHP</li>
+                                <li>MySQL</li>
+                                <li>CRUD</li>
+                                <li>Authentication</li>
+                                <li>Input Sanitization</li>
+                            </ul>
+
+                            <a class="portfolio-text-link" href="projects/employee-directory.html">View project</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <section>
-        <h1>Previous work experience</h1>
-        <p>
-            I previously spent 3 years working as a lab assistant in Oslo, where I spent my day helping bio-chemcial engineers and scientists with their work. 
-            I would do anything that did not require a bio-chemical degree, so I am used to flexible work tasks.
-        </p>
-    </section>
-
-    <footer>
-        <div class="contact-link-group">
-          <a class="contact-link" href="mailto:adriannedkvitne@gmail.com">adriannedkvitne@gmail.com</a>
-          <a class="contact-link" href="https://github.com/AdrianTobiassen" target="_blank">GitHub</a>
-          <a class="contact-link" href="https://www.linkedin.com/in/adrian-nedkvitne-tobiassen-43bbab3b5" target="_blank">LinkedIn</a>
+    <footer class="portfolio-footer">
+        <div class="portfolio-container portfolio-footer-content">
+            <p>© 2026 Adrian Nedkvitne Tobiassen</p>
         </div>
     </footer>
-
-
 </body>
 
 </html>
